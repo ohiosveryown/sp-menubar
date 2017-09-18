@@ -13,8 +13,6 @@ html {
 }
 
 body {
-  /*overflow-x: hidden;
-  min-height: 100vh;*/
   background: #fff;
   color: rgba(black,0.8);
   font: normal 2rem/1.6 "SFCompactText-Medium", "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -85,6 +83,15 @@ li     { display: inline-block; }
 .right-segment { width: 50%; }
 
 
+/* bg */
+.bg {
+  position: fixed;
+  right: 0; bottom: 0; left: 0;
+  z-index: -999;
+  opacity: 0.3;
+}
+
+
 /* table */
 .table-wrapper {
   height: calc(100% - 32px);
@@ -101,12 +108,12 @@ li     { display: inline-block; }
 
 .row:hover {
   cursor: pointer;
-  background: #f4f4f4;
+  background: rgba(244,244,244,0.7);
 }
 
 .row:hover > .view-notification {
   opacity: 1;
-  transform: translate(-16px, -50%);
+  transform: translate(-24px, -50%);
 }
 
 .avatar {
@@ -162,4 +169,19 @@ li     { display: inline-block; }
   0%   { opacity: 1; position: relative; }
   90%  { opacity: 0; position: relative; }
   100% { opacity: 0; position: absolute; }
+}
+
+
+/* filter */
+.filter {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background: #f6f6f6;
+  box-shadow: 0 -1px 0 0 #e1e1e1;
 }
