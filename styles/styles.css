@@ -81,13 +81,8 @@ li     { display: inline-block; }
   box-shadow: 0 1px 0 0 #e1e1e1;
 }
 
-.left-segment {
-  width: 50%;
-}
-
-.right-segment {
-  width: 50%;
-}
+.left-segment  { width: 50%; }
+.right-segment { width: 50%; }
 
 
 /* table */
@@ -130,9 +125,7 @@ li     { display: inline-block; }
 .order-color    { background: #dd00ff; }
 .download-color { background: #ff0063; }
 
-.row-content {
-  margin-left: 8px;
-}
+.row-content { margin-left: 8px; }
 
 .view-notification {
   position: absolute;
@@ -155,13 +148,10 @@ li     { display: inline-block; }
   color: #fff;
 }
 
-.clear:hover {
-  cursor: grab;
-}
+.clear:hover { cursor: grab; }
 
-.hide-trigger:hover {
-  cursor: pointer;
-}
+
+.hide-trigger:hover { cursor: pointer; }
 
 .none {
   animation: hide 800ms;
