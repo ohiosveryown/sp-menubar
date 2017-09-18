@@ -1,0 +1,149 @@
+/* reset */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+}
+
+body {
+  /*overflow-x: hidden;
+  min-height: 100vh;*/
+  background: #fff;
+  color: rgba(black,0.8);
+  font: normal 2rem/1.6 "SFCompactText-Medium", "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.3px;
+}
+
+.debug { border: 2px solid hotpink; }
+
+a { text-decoration: none; color: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, span, blockquote, caption, ul, li, img, button, section, article, figure, main, footer {
+  padding: 0;
+  margin: 0;
+}
+
+ul { -webkit-margin-before: 0; -webkit-margin-after: 0; }
+
+button { border: none; background: #ccc; cursor: pointer; }
+img    { max-width: 100%; }
+ul     { list-style-type: none; }
+li     { display: inline-block; }
+
+
+/* typography */
+.f-lg {
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.f-md {
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.f-sm, p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.bold      { font-weight: 700; }
+.monospace { font-family: 'SpaceMono', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Courier, monospace; }
+.serif     { font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.uc { text-transform: uppercase; }
+.jl { text-align: left; }
+.jr { text-align: right; }
+.jc { text-align: center; }
+
+.op-6 { opacity: 0.6; }
+
+
+/* segmented control */
+.segment-wrapper {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 32px;
+  background: #f6f6f6;
+  box-shadow: 0 1px 0 0 #e1e1e1;
+}
+
+.left-segment {
+  width: 50%;
+}
+
+.right-segment {
+  width: 50%;
+}
+
+
+/* table */
+.table-wrapper {
+  height: calc(100% - 32px);
+  overflow: scroll;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  transition: all 300ms ease;
+}
+
+.row:hover {
+  cursor: pointer;
+  background: #f4f4f4;
+}
+
+.row:hover > .view-notification {
+  opacity: 1;
+  transform: translate(-16px, -50%);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 14px;
+}
+
+.invoice-color {
+  background: #3b00ff;
+}
+
+.contract-color {
+  background: #00bfff;
+}
+
+.row-content {
+  margin-left: 8px;
+}
+
+.view-notification {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #0038ff;
+  opacity: 0;
+  transition: all 400ms 150ms ease;
+  will-change: transform;
+}

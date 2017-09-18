@@ -1,14 +1,13 @@
 <html>
+
   <head>
     <title>ShootProof Menubar App</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script charset="utf-8">require('./index')</script>
+    <script src="js/siema.js"></script>
   </head>
-  <body>
-    <!-- <div class="f-lg bold">SP Electron App</div>
-    <div class="f-md bold">Medium Sized Type</div>
-    <div class="f-sm">This is body copy</div> -->
 
+  <body>
 
     <!-- segmented control -->
      <div class="segment-wrapper f-sm uc">
@@ -17,10 +16,10 @@
      </div>
 
      <!-- table -->
-     <div class="table-wrapper debug">
+     <div class="table-wrapper">
 
        <!-- row -->
-       <div class="row">
+       <div class="row siema">
          <div class="avatar invoice-color bold uc">
            inv
          </div>
@@ -28,7 +27,7 @@
            <div class="f-md">Invoice Awaiting Signature</div>
            <div class="f-sm uc op-6">invoice 12405</div>
          </div>
-         <div class="view-notification f-sm bold">
+         <div class="view-notification f-sm uc">
            <a href="http://google.com" target="_blank">View</a>
          </div>
        </div>
@@ -42,13 +41,19 @@
            <div class="f-md">Invoice Awaiting Signature</div>
            <div class="f-sm uc op-6">invoice 12405</div>
          </div>
-         <div class="view-notification f-sm bold">
+         <div class="view-notification f-sm uc">
            <a href="#" target="_blank">View</a>
          </div>
        </div>
 
      </div>
 
+     <script>
+       new Siema();
+
+
+
+     </script>
 
   </body>
 </html>
