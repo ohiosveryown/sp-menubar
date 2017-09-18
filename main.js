@@ -21,7 +21,7 @@ app.on('ready', () => {
 
   window = new BrowserWindow({
     width: 400,
-    height: 312,
+    height: 280,
     show: false,
     frame: false,
     resizable: false,

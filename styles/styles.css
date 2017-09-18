@@ -125,13 +125,10 @@ li     { display: inline-block; }
   font-size: 14px;
 }
 
-.invoice-color {
-  background: #3b00ff;
-}
-
-.contract-color {
-  background: #00bfff;
-}
+.invoice-color  { background: #3b00ff; }
+.contract-color { background: #00bfff; }
+.order-color    { background: #dd00ff; }
+.download-color { background: #ff0063; }
 
 .row-content {
   margin-left: 8px;
@@ -146,4 +143,33 @@ li     { display: inline-block; }
   opacity: 0;
   transition: all 400ms 150ms ease;
   will-change: transform;
+}
+
+.clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background: #ff0066;
+  color: #fff;
+}
+
+.clear:hover {
+  cursor: grab;
+}
+
+.hide-trigger:hover {
+  cursor: pointer;
+}
+
+.none {
+  animation: hide 800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0%   { opacity: 1; position: relative; }
+  90%  { opacity: 0; position: relative; }
+  100% { opacity: 0; position: absolute; }
 }

@@ -10,50 +10,128 @@
   <body>
 
     <!-- segmented control -->
-     <div class="segment-wrapper f-sm uc">
-       <div class="left-segment">notifications</div>
-       <div class="right-segment">tools</div>
-     </div>
+    <div class="segment-wrapper f-sm uc">
+      <div class="left-segment">notifications</div>
+      <div class="right-segment">tools</div>
+    </div>
 
-     <!-- table -->
-     <div class="table-wrapper">
+    <!-- table -->
+    <div class="table-wrapper">
 
-       <!-- row -->
-       <div class="row siema">
-         <div class="avatar invoice-color bold uc">
-           inv
-         </div>
-         <div class="row-content">
-           <div class="f-md">Invoice Awaiting Signature</div>
-           <div class="f-sm uc op-6">invoice 12405</div>
-         </div>
-         <div class="view-notification f-sm uc">
-           <a href="http://google.com" target="_blank">View</a>
-         </div>
-       </div>
+      <!-- row -->
+      <div class="siema">
+        <div class="row">
 
-       <!-- row -->
-       <div class="row">
-         <div class="avatar contract-color bold uc">
-           con
-         </div>
-         <div class="row-content">
-           <div class="f-md">Invoice Awaiting Signature</div>
-           <div class="f-sm uc op-6">invoice 12405</div>
-         </div>
-         <div class="view-notification f-sm uc">
-           <a href="#" target="_blank">View</a>
-         </div>
-       </div>
+          <!-- avatar -->
+          <div class="avatar invoice-color bold uc">inv</div>
 
-     </div>
+          <!-- content -->
+          <div class="row-content">
+            <div class="f-md">Invoice Awaiting Signature</div>
+            <div class="f-sm uc op-6">invoice 12405</div>
+          </div>
 
-     <script>
-       new Siema();
+          <!-- view -->
+          <div class="view-notification f-sm uc">
+            <a href="http://google.com" target="_blank">View</a>
+          </div>
+        </div>
+
+        <!-- clear -->
+        <div class="clear">
+          <div class="hide-trigger f-sm uc" onclick="hideRow()">clear</div>
+        </div>
+
+      </div>
 
 
+      <!-- row -->
+      <div class="row">
 
-     </script>
+        <!-- avatar -->
+        <div class="avatar contract-color bold uc">con</div>
+
+        <!-- content -->
+        <div class="row-content">
+          <div class="f-md">Contract Set to Expired</div>
+          <div class="f-sm uc op-6">Alex &amp; Allie Lockwood Photoshoot</div>
+        </div>
+
+        <!-- view -->
+        <div class="view-notification f-sm uc">
+          <a href="http://google.com" target="_blank">View</a>
+        </div>
+      </div>
+
+
+      <!-- row -->
+      <div class="row">
+
+        <!-- avatar -->
+        <div class="avatar contract-color bold uc">con</div>
+
+        <!-- content -->
+        <div class="row-content">
+          <div class="f-md">Contract Awaiting Signature</div>
+          <div class="f-sm uc op-6">Fall 2017 Photoshoot</div>
+        </div>
+
+        <!-- view -->
+        <div class="view-notification f-sm uc">
+          <a href="http://google.com" target="_blank">View</a>
+        </div>
+      </div>
+
+
+      <!-- row -->
+      <div class="row">
+
+        <!-- avatar -->
+        <div class="avatar order-color bold uc">ord</div>
+
+        <!-- content -->
+        <div class="row-content">
+          <div class="f-md">Order Shipped</div>
+          <div class="f-sm uc op-6">order 1930396</div>
+        </div>
+
+        <!-- view -->
+        <div class="view-notification f-sm uc">
+          <a href="http://google.com" target="_blank">View</a>
+        </div>
+      </div>
+
+
+      <!-- row -->
+      <div class="row">
+
+        <!-- avatar -->
+        <div class="avatar download-color bold uc">dow</div>
+
+        <!-- content -->
+        <div class="row-content">
+          <div class="f-md">Download Item</div>
+          <div class="f-sm uc op-6">MA-Engagement-004.jpg</div>
+        </div>
+
+        <!-- view -->
+        <div class="view-notification f-sm uc">
+          <a href="http://google.com" target="_blank">View</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <script>
+      new Siema();
+
+      hideRow = function() {
+        var myButton = document.querySelector('.siema');
+          myButton.classList.toggle('none');
+      }
+    </script>
 
   </body>
 </html>
