@@ -1,7 +1,7 @@
 {
-  "name": "tutorial-menubar-app",
+  "name": "sp-menubar",
   "version": "1.0.0",
-  "description": "A simple Electron tutorial app for the menubar",
+  "description": "Simple menubar app for ShootProof via Electron.",
   "license": "MIT",
   "devDependencies": {
     "electron-packager": "^8.0.0",
