@@ -235,6 +235,7 @@ select {
   width: 100%;
   height: calc(100% - 64px);
   /*background: dodgerblue;*/
+  background-size: cover;
   position: absolute;
   z-index: -99;
   top: 32px;
@@ -258,4 +259,4 @@ select {
 }
 
 .op-1, .active { opacity: 1; }
-.inactive { opacity: 0.5; }
+.inactive { opacity: 0.35; }
