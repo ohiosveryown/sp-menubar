@@ -11,11 +11,11 @@
 
     <!-- segmented control -->
     <div class="segment-wrapper f-sm uc">
-      <div class="left-segment">notifications</div>
-      <div class="right-segment">tools</div>
+      <div class="left-segment underline" onclick="showTools()">notifications</div>
+      <div class="right-segment" onclick="showTools()">tools</div>
     </div>
 
-    <!-- table -->
+    <!-- notifications -->
     <div class="table-wrapper">
 
       <!-- row -->
@@ -129,6 +129,11 @@
 
     </div>
 
+    <!-- tools -->
+    <div class="tools-wrapper debug">
+      this is tools...
+    </div>
+
     <!-- filter -->
     <div class="filter">
       <select class="f-sm uc">
@@ -149,9 +154,21 @@
       });
 
       hideRow = function() {
-        var myButton = document.querySelector('.siema');
-          myButton.classList.toggle('none');
-      }
+        var siema = document.querySelector('.siema');
+          siema.classList.toggle('none');
+      };
+
+      showTools = function() {
+        var hidetable = document.querySelector('.table-wrapper');
+          hidetable.classList.toggle('hide-table');
+        var shownotif = document.querySelector('.tools-wrapper');
+          shownotif.classList.toggle('show-tools');
+        var activ = document.querySelector('.right-segment');
+          activ.classList.toggle('underline');
+        var activ = document.querySelector('.left-segment');
+          activ.classList.toggle('underline');
+      };
+
     </script>
 
   </body>
