@@ -84,15 +84,6 @@ li     { display: inline-block; }
 
 
 /* bg */
-.overlay {
-  background: linear-gradient(to right, rgba(255,255,255,0.6) 20%,rgba(255,255,255,0) 100%);
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  right: 0; top: 0;
-  z-index: -998;
-}
-
 .bg {
   position: fixed;
   right: 0; bottom: 0; left: 0;
@@ -105,7 +96,7 @@ li     { display: inline-block; }
 .table-wrapper {
   height: calc(100% - 32px);
   overflow: scroll;
-  transition: all 400ms ease;
+  transition: all 400ms 200ms ease;
 }
 
 .row {
@@ -240,7 +231,7 @@ select {
   z-index: -99;
   top: 32px;
   opacity: 0;
-  transition: all 400ms ease;
+  transition: all 200ms ease;
   transform: translateX(8px);
 }
 
@@ -253,7 +244,7 @@ select {
 
 .show {
   opacity: 1;
-  transition: all 400ms 500ms ease;
+  transition: all 400ms 200ms ease;
   transform: translateX(0);
   z-index: 99;
 }
