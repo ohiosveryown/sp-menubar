@@ -20,6 +20,9 @@
 
       <!-- row -->
       <div class="siema">
+
+        <div class="snooze f-sm uc">snooze</div>
+
         <div class="row">
 
           <!-- avatar -->
@@ -110,7 +113,7 @@
 
         <!-- content -->
         <div class="row-content">
-          <div class="f-md">Downloaded Item</div>
+          <div class="f-md">Download Item</div>
           <div class="f-sm uc op-6">MA-Engagement-004.jpg</div>
         </div>
 
@@ -121,13 +124,20 @@
       </div>
 
       <!-- bg -->
-      <img src="img/app-bg-2.png" alt="" class="bg">
+      <div class="overlay"></div>
+      <img class="bg" src="img/bg.png" alt="woman working illustration">
 
     </div>
 
     <!-- filter -->
     <div class="filter">
-      <div class="f-sm uc">show: everything</div>
+      <select class="f-sm uc">
+        <option value="">show: everything</option>
+        <option value="">show: downloads</option>
+        <option value="">show: contracts</option>
+        <option value="">show: invoices</option>
+        <option value="">show: orders</option>
+      </select>
     </div>
 
 
@@ -135,6 +145,7 @@
     <script>
       new Siema({
         duration: 500,
+        startIndex: 1,
       });
 
       hideRow = function() {
