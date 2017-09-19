@@ -227,18 +227,16 @@ select {
   appearance: none;
 }
 
-.filter select:focus {
-    outline: none;
-}
+.filter select:focus { outline: none; }
 
 
 /* click active/inactive */
 .underline { opacity: 1; }
 
 .show-tools {
+  position: relative;
   color: red;
-  z-index: inherit;
-  opacity: 1;
+  z-index: 9999;
   transition: all 400ms 800ms ease;
 }
 
@@ -256,7 +254,6 @@ select {
   top: 32px;
   width: 100%;
   height: calc(100% - 32px);
-  overflow: scroll;
   /*transition: all 400ms 800ms ease;*/
-  opacity: 0;
+
 }
