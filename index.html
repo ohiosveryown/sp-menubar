@@ -11,12 +11,12 @@
 
     <!-- segmented control -->
     <div class="segment-wrapper f-sm uc">
-      <div class="left-segment underline" onclick="showTools()">notifications</div>
-      <div class="right-segment" onclick="showTools()">tools</div>
+      <div id="title-n" class="left-segment active" onclick="toggle()">notifications</div>
+      <div id="title-t" class="right-segment inactive op-1" onclick="toggle()">tools</div>
     </div>
 
     <!-- notifications -->
-    <div class="table-wrapper">
+    <div id="table-wrapper" class="table-wrapper">
 
       <!-- row -->
       <div class="siema">
@@ -130,10 +130,8 @@
     </div>
 
     <!-- tools -->
-    <div class="tools-wrapper debug">
-      <p class="f-sm">
-        this is tools...
-      </p>
+    <div id="tools-wrapper" class="tools-wrapper debug">
+      <p class="f-sm">this is tools</p>
     </div>
 
     <!-- filter -->
@@ -160,16 +158,12 @@
           siema.classList.toggle('none');
       };
 
-      showTools = function() {
-        var hidetable = document.querySelector('.table-wrapper');
-          hidetable.classList.toggle('hide-table');
-        var shownotif = document.querySelector('.tools-wrapper');
-          shownotif.classList.toggle('show-tools');
-        var activ = document.querySelector('.right-segment');
-          activ.classList.toggle('underline');
-        var activ = document.querySelector('.left-segment');
-          activ.classList.toggle('underline');
-      };
+      function toggle() {
+        document.getElementById("tools-wrapper").classList.toggle("show");
+        document.getElementById("table-wrapper").classList.toggle("hide");
+        document.getElementById("title-n").classList.toggle("active");
+        document.getElementById("title-t").classList.toggle("inactive");
+      }
 
     </script>
 

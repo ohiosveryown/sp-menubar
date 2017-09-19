@@ -231,29 +231,31 @@ select {
 
 
 /* click active/inactive */
-.underline { opacity: 1; }
-
-.show-tools {
-  position: relative;
-  color: red;
-  z-index: 9999;
-  transition: all 400ms 800ms ease;
-}
-
-.hide-table {
-  opacity: 0;
-  transform: translateX(-8px);
-  transition: all 300ms ease;
-}
-
-
-/* tools */
 .tools-wrapper {
-  position: absolute;
-  z-index: -999;
-  top: 32px;
   width: 100%;
-  height: calc(100% - 32px);
-  /*transition: all 400ms 800ms ease;*/
-
+  height: calc(100% - 64px);
+  /*background: dodgerblue;*/
+  position: absolute;
+  z-index: -99;
+  top: 32px;
+  opacity: 0;
+  transition: all 400ms ease;
+  transform: translateX(8px);
 }
+
+.hide {
+  opacity: 0;
+  z-index: -99;
+  transition: all 400ms ease;
+  transform: translateX(-8px);
+}
+
+.show {
+  opacity: 1;
+  transition: all 400ms 500ms ease;
+  transform: translateX(0);
+  z-index: 99;
+}
+
+.op-1, .active { opacity: 1; }
+.inactive { opacity: 0.5; }
