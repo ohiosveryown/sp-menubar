@@ -117,7 +117,7 @@ li     { display: inline-block; }
 
 .row:hover {
   cursor: pointer;
-  background: rgba(244,244,244,0.94);
+  background: rgba(248,248,248,0.94);
 }
 
 .row:hover > .view-notification {
@@ -158,10 +158,11 @@ li     { display: inline-block; }
   transform: translate(0, -50%);
   color: #0038ff;
   opacity: 0;
-  transition: all 400ms 150ms ease;
+  transition: all 400ms ease;
   will-change: transform;
 }
 
+/* clear */
 .clear {
   display: flex;
   align-items: center;
@@ -174,6 +175,7 @@ li     { display: inline-block; }
 
 .clear:hover { cursor: grab; }
 
+/* snooze */
 .snooze {
   display: flex;
   align-items: center;
