@@ -2,4 +2,4 @@
 Simple menubar app for ShootProof via Electron.
 
 
-![alt text](https://s26.postimg.org/q1dmo4tu1/scrn.png)
+![alt text](https://media.giphy.com/media/3ohhwMQ0GKnF8i6VTq/giphy.gif)
