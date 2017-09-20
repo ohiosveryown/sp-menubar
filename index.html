@@ -26,7 +26,7 @@
         <div class="row">
 
           <!-- avatar -->
-          <div class="avatar invoice-color bold uc">inv</div>
+          <div class="avatar invoice-color f-lg uc">inv</div>
 
           <!-- content -->
           <div class="row-content">
@@ -35,7 +35,7 @@
           </div>
 
           <!-- view -->
-          <div class="view-notification f-sm uc">
+          <div class="view-notification f-md uc">
             <a href="http://google.com" target="_blank">View</a>
           </div>
         </div>
@@ -52,7 +52,7 @@
       <div class="row">
 
         <!-- avatar -->
-        <div class="avatar contract-color bold uc">con</div>
+        <div class="avatar contract-color f-lg uc">con</div>
 
         <!-- content -->
         <div class="row-content">
@@ -61,7 +61,7 @@
         </div>
 
         <!-- view -->
-        <div class="view-notification f-sm uc">
+        <div class="view-notification f-md uc">
           <a href="http://google.com" target="_blank">View</a>
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div class="row">
 
         <!-- avatar -->
-        <div class="avatar contract-color bold uc">con</div>
+        <div class="avatar contract-color f-lg uc">con</div>
 
         <!-- content -->
         <div class="row-content">
@@ -80,7 +80,7 @@
         </div>
 
         <!-- view -->
-        <div class="view-notification f-sm uc">
+        <div class="view-notification f-md uc">
           <a href="http://google.com" target="_blank">View</a>
         </div>
       </div>
@@ -90,7 +90,7 @@
       <div class="row">
 
         <!-- avatar -->
-        <div class="avatar order-color bold uc">ord</div>
+        <div class="avatar order-color f-lg uc">ord</div>
 
         <!-- content -->
         <div class="row-content">
@@ -99,7 +99,7 @@
         </div>
 
         <!-- view -->
-        <div class="view-notification f-sm uc">
+        <div class="view-notification f-md uc">
           <a href="http://google.com" target="_blank">View</a>
         </div>
       </div>
@@ -109,7 +109,7 @@
       <div style="margin-bottom: 32px;" class="row">
 
         <!-- avatar -->
-        <div class="avatar download-color bold uc">dow</div>
+        <div class="avatar download-color f-lg uc">dow</div>
 
         <!-- content -->
         <div class="row-content">
@@ -118,7 +118,7 @@
         </div>
 
         <!-- view -->
-        <div class="view-notification f-sm uc">
+        <div class="view-notification f-md uc">
           <a href="http://google.com" target="_blank">View</a>
         </div>
       </div>
@@ -160,7 +160,7 @@
 
 
     <!-- app bg -->
-    <img class="bg" src="img/app-bg.png" alt="empty workstation illustration">
+    <img id="bg" class="bg" src="img/app-bg.png" alt="empty workstation illustration">
 
 
     <!-- filter -->
@@ -191,6 +191,7 @@
         document.getElementById("table-wrapper").classList.toggle("hide");
         document.getElementById("title-n").classList.toggle("active");
         document.getElementById("title-t").classList.toggle("inactive");
+        document.getElementById("bg").classList.toggle("opacity");
       }
 
     </script>

@@ -38,13 +38,15 @@ li     { display: inline-block; }
 
 /* typography */
 .f-lg {
-  font-size: 2.4rem;
+  /*font-family: "SFCompactText-Semibold";*/
+  font-size: 1.8rem;
   line-height: 1;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .f-md {
-  font-size: 1.6rem;
+  font-family: "SFCompactText-Semibold";
+  font-size: 1.4rem;
   line-height: 1;
   letter-spacing: -0.5px;
 }
@@ -52,7 +54,7 @@ li     { display: inline-block; }
 .f-sm, p {
   font-size: 1.2rem;
   line-height: 1.2;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.25px;
 }
 
 .bold      { font-weight: 700; }
@@ -64,7 +66,11 @@ li     { display: inline-block; }
 .jr { text-align: right; }
 .jc { text-align: center; }
 
+.op-9 { opacity: 0.9; }
+.op-8 { opacity: 0.8; }
+.op-7 { opacity: 0.7; }
 .op-6 { opacity: 0.6; }
+.op-0 { opacity: 0.1; }
 
 
 /* segmented control */
@@ -89,7 +95,10 @@ li     { display: inline-block; }
   right: 0; bottom: 0; left: 0;
   z-index: -999;
   opacity: 1;
+  transition: all 400ms ease;
 }
+
+.opacity { opacity: 0.2; }
 
 
 /* table */
@@ -104,26 +113,16 @@ li     { display: inline-block; }
   display: flex;
   align-items: center;
   padding: 10px 16px;
-  transition: all 300ms ease;
-}
-
-.row:hover {
-  cursor: pointer;
-  background: rgba(248,248,248,0.94);
-}
-
-.row:hover > .view-notification {
-  opacity: 1;
-  transform: translate(-16px, -50%);
-}
-
-.row:hover > .row-content {
-  transform: translateX(4px);
-}
-
-.row-content {
   transition: all 400ms ease;
 }
+
+.row:hover { cursor: pointer; background: linear-gradient(to left, rgba(255,255,255,1) 10%,rgba(255,255,255,0) 80%); }
+
+.row:hover > .view-notification { opacity: 1; transform: translate(-16px, -50%); transition: all 400ms 100ms ease; }
+
+.row:hover > .row-content { transform: translateX(3px); }
+
+.row-content { margin-left: 8px; transition: all 400ms ease; }
 
 .avatar {
   display: flex;
@@ -141,16 +140,14 @@ li     { display: inline-block; }
 .order-color    { background: #dd00ff; }
 .download-color { background: #ff0063; }
 
-.row-content { margin-left: 8px; }
-
 .view-notification {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-8px, -50%);
   color: #0038ff;
   opacity: 0;
-  transition: all 400ms ease;
+  transition: all 200ms ease;
   will-change: transform;
 }
 

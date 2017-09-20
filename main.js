@@ -19,6 +19,9 @@ app.on('ready', () => {
     }
   })
 
+  // Don't show the app in the doc
+  app.dock.hide()
+
   window = new BrowserWindow({
     width: 400,
     height: 288,
@@ -50,10 +53,10 @@ const showWindow = () => {
   let x, y = 0
   if (process.platform == 'darwin') {
     x = Math.round(trayPos.x + 0)
-    y = Math.round(trayPos.y + 0)
+    y = Math.round(trayPos.y + 30)
   } else {
     x = Math.round(trayPos.x + 0)
-    y = Math.round(trayPos.y + 0)
+    y = Math.round(trayPos.y + 30)
   }
 
 
@@ -72,6 +75,5 @@ app.on('window-all-closed', () => {
   }
 })
 
-
 // Tray Icon
-let base64Icon = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAWCAYAAAA8VJfMAAAABGdBTUEAALGPC/xhBQAAAI9JREFUSA3tVEEOwCAIM3vCfrVfsbfuIa4ceiEkgjMxZpIYlLVFyKSUbX/pwIVCH6xqluDsmSBoscpXnbBlElJUsPES83vTk3w2kT5AedTwEU40TchoHA6YoZubTp/mS2ciSxulY3UXP49qS0pH/94UAXhrgoDqhG3ak9EbfhkO4QoJnDIGpwx8Vrz9eh14ASwtPl0K+AaWAAAAAElFTkSuQmCC`
+let base64Icon = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWCAYAAADTlvzyAAAABGdBTUEAALGPC/xhBQAAAJVJREFUSA3tVAsKgCAMlW7XrdZZ6x61QQ9GMLehRYgPxJXvYyMtZWLUDqz8YTuPUw3i2gLxguaKVjzCyITBlLh4hmLNnSF0iQbB1C+G4LXXtcCtITWtpYYwSHt4wGuAuUc7Uh7yW6cEzNcgfhCPMMxzFHQw9bVjEfTO0azA47bBTilgKxzwhQ4PqV18fnm7O5qE33TgAgLcMCmttPafAAAAAElFTkSuQmCC`
