@@ -117,11 +117,8 @@ li     { display: inline-block; }
 }
 
 .row:hover { cursor: pointer; background: linear-gradient(to left, rgba(255,255,255,1) 10%,rgba(255,255,255,0) 80%); }
-
 .row:hover > .view-notification { opacity: 1; transform: translate(-16px, -50%); transition: all 400ms 100ms ease; }
-
 .row:hover > .row-content { transform: translateX(3px); }
-
 .row-content { margin-left: 8px; transition: all 400ms ease; }
 
 .avatar {
